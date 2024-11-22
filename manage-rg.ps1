@@ -24,8 +24,8 @@ function Delete-ResourceGroup {
 
 # choice of delete or create
 Write-Host "choose:"
-Write-Host "create rg"
-Write-Host "delete rg"
+Write-Host "1. create rg"
+Write-Host "2. delete rg"
 $choice = Read-Host "enter choice"
 
 if ($choice -eq 1) {
