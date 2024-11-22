@@ -1,10 +1,10 @@
-$resourceGroupName = "myResourceGroup"
-$location = "uksouth"
+$resourceGroupName = Read-Host "Enter rg name"
+$location = Read-Host "enter location"
 
 
 # creation of rg
 function Create-ResourceGroup {
-    Write-Host "Creating resource group '$ResourceGroupName' in location '$Location'..."
+    Write-Host "Creating resource group '$resourceGroupName' in location '$Location'..."
     New-AzResourceGroup -Name $resourceGroupName -Location $location
     Write-Host "resource group '$resourceGroupName' created."
 }
